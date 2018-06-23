@@ -12,5 +12,8 @@ function(add_tt_test name src)
     target_link_libraries(${name} PUBLIC TestTaskMainL)
 endfunction()
 
-# Проверка работы класса-калькулятора
+# Проверка работы класса калькулятора
 add_tt_test(BinomialCalculatorT BinomialCalculatorT.cpp)
+
+# Проверка работы класса парсера
+add_tt_test(LineParserT LineParserT.cpp)
